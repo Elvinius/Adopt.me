@@ -5,10 +5,13 @@ import SearchParams from "./SearchParams"
 
 const App = () => {
   return( 
+  <React.StrictMode >
   <div>
     <h1>Adopt Me!</h1>
     <SearchParams />
-  </div>);
+  </div>
+  </React.StrictMode>
+  );
 };
 
 render(<App />, document.querySelector("#root"));
