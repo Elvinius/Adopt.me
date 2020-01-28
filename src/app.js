@@ -9,10 +9,9 @@ import ThemeContext from "./ThemeContext";
 
 
 const App = () => {
-  const themeHook = useState("darkblue");
+  const theme = useState("darkblue");
   return( 
-  <React.StrictMode >
-  <ThemeContext.Provider value={themeHook}>
+  <ThemeContext.Provider value={theme}>
     <div>
       <header>
         <Link to="/">
@@ -26,7 +25,6 @@ const App = () => {
       </Router>
     </div>
   </ThemeContext.Provider>
-  </React.StrictMode>
   );
 };
 
